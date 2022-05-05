@@ -34,7 +34,7 @@ endfunc
 "----------------------------------------------------------------------
 " 在 ~/.vim/bundles 下安装插件
 "----------------------------------------------------------------------
-call plug#begin(get(g:, 'bundle_home', '~/.vim/bundles'))
+call plug#begin(get(g:, 'bundle_home', 'E:/00-Personal/software/myvim/.vim/bundles'))
 
 
 "----------------------------------------------------------------------
@@ -311,6 +311,7 @@ if index(g:bundle_group, 'nerdtree') >= 0
 	let g:NERDTreeMinimalUI = 1
 	let g:NERDTreeDirArrows = 1
 	let g:NERDTreeHijackNetrw = 0
+	let NERDTreeShowHidden=1
 	noremap <space>nn :NERDTree<cr>
 	noremap <space>no :NERDTreeFocus<cr>
 	noremap <space>nm :NERDTreeMirror<cr>

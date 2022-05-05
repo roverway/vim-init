@@ -14,6 +14,13 @@
 " 基础设置
 "----------------------------------------------------------------------
 
+"共用系统剪贴板
+set clipboard+=unnamed
+
+" 高亮当前行列
+set cursorcolumn
+set cursorline
+
 " 禁用 vi 兼容模式
 set nocompatible
 
