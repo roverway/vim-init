@@ -302,9 +302,13 @@ if index(g:bundle_group, 'airline') >= 0
 	let g:airline_left_alt_sep = ''
 	let g:airline_right_sep = ''
 	let g:airline_right_alt_sep = ''
+	"let g:airline_left_sep = '▶'
+	"let g:airline_left_alt_sep = '❯'
+	"let g:airline_right_sep = '◀'
+	"let g:airline_right_alt_sep = '❮'
 	let g:airline_symbols.branch = ''
 	let g:airline_symbols.readonly = ''
-	"let g:airline_symbols.linenr = '☰'
+	let g:airline_symbols.linenr = '¶'
 	let g:airline_symbols.maxlinenr = ''
 	let g:airline_symbols.dirty= '⚡'
 
@@ -330,6 +334,7 @@ endif
 if index(g:bundle_group, 'nerdtree') >= 0
 	Plug 'scrooloose/nerdtree', {'on': ['NERDTree', 'NERDTreeFocus', 'NERDTreeToggle', 'NERDTreeCWD', 'NERDTreeFind'] }
 	Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+	Plug 'ryanoasis/vim-devicons'
 	let g:NERDTreeMinimalUI = 1
 	let g:NERDTreeDirArrows = 1
 	let g:NERDTreeHijackNetrw = 0
