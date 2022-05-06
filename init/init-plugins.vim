@@ -294,7 +294,9 @@ if index(g:bundle_group, 'airline') >= 0
 	"Powerline symbols
 	let g:airline_powerline_fonts = 1
 	"set guifont=Consolas-with-Yahei:h12:cANSI
-	set guifont=Cascadia\ Mono\ PL:h12:cANSI
+	set guifont=FiraCode_Nerd_Font_Mono:h12:cANSI
+	set guifontwide=Microsoft_YaHei:h12
+
 	if !exists('g:airline_symbols')
 		let g:airline_symbols = {}
 	endif
@@ -308,7 +310,8 @@ if index(g:bundle_group, 'airline') >= 0
 	"let g:airline_right_alt_sep = '❮'
 	let g:airline_symbols.branch = ''
 	let g:airline_symbols.readonly = ''
-	let g:airline_symbols.linenr = '¶'
+	let g:airline_symbols.linenr = '☰'
+	"let g:airline_symbols.linenr = '¶'
 	let g:airline_symbols.maxlinenr = ''
 	let g:airline_symbols.dirty= '⚡'
 
@@ -324,7 +327,7 @@ if index(g:bundle_group, 'airline') >= 0
 	"打开tabline功能,方便查看Buffer和切换,省去了minibufexpl插件
 	let g:airline#extensions#tabline#enabled = 1
 	let g:airline#extensions#tabline#buffer_nr_show = 1
-	let g:airline#extensions#tabline#formatter = 'default'
+	let g:airline#extensions#tabline#formatter = 'unique_tail'
 endif
 
 
