@@ -286,19 +286,41 @@ endif
 if index(g:bundle_group, 'airline') >= 0
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
-	let g:airline_left_sep = ''
-	let g:airline_left_alt_sep = ''
-	let g:airline_right_sep = ''
-	let g:airline_right_alt_sep = ''
-	let g:airline_powerline_fonts = 0
+	"let g:airline_left_sep = ''
+	"let g:airline_left_alt_sep = ''
+	"let g:airline_right_sep = ''
+	"let g:airline_right_alt_sep = ''
+
+	"Powerline symbols
+	let g:airline_powerline_fonts = 1
+	set guifont=Consolas-with-Yahei:h12:cANSI
+	"set guifont=FiraCode\ Nerd\ Font\ Mono:h12:cANSI
+	if !exists('g:airline_symbols')
+		let g:airline_symbols = {}
+	endif
+	let g:airline_left_sep = ''
+	let g:airline_left_alt_sep = ''
+	let g:airline_right_sep = ''
+	let g:airline_right_alt_sep = ''
+	let g:airline_symbols.branch = ''
+	let g:airline_symbols.readonly = ''
+	let g:airline_symbols.linenr = '☰'
+	let g:airline_symbols.maxlinenr = ''
+	let g:airline_symbols.dirty= '⚡'
+
+
 	let g:airline_exclude_preview = 1
 	let g:airline_section_b = '%n'
 	let g:airline_theme='deus'
-	let g:airline#extensions#branch#enabled = 0
-	let g:airline#extensions#syntastic#enabled = 0
+	let g:airline#extensions#branch#enabled = 1
+	let g:airline#extensions#syntastic#enabled = 1
 	let g:airline#extensions#fugitiveline#enabled = 0
 	let g:airline#extensions#csv#enabled = 0
 	let g:airline#extensions#vimagit#enabled = 0
+	"打开tabline功能,方便查看Buffer和切换,省去了minibufexpl插件
+	let g:airline#extensions#tabline#enabled = 1
+	let g:airline#extensions#tabline#buffer_nr_show = 1
+	let g:airline#extensions#tabline#formatter = 'default'
 endif
 
 
