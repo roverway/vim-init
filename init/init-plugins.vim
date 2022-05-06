@@ -293,8 +293,8 @@ if index(g:bundle_group, 'airline') >= 0
 
 	"Powerline symbols
 	let g:airline_powerline_fonts = 1
-	set guifont=Consolas-with-Yahei:h12:cANSI
-	"set guifont=FiraCode\ Nerd\ Font\ Mono:h12:cANSI
+	"set guifont=Consolas-with-Yahei:h12:cANSI
+	set guifont=Cascadia\ Mono\ PL:h12:cANSI
 	if !exists('g:airline_symbols')
 		let g:airline_symbols = {}
 	endif
@@ -304,7 +304,7 @@ if index(g:bundle_group, 'airline') >= 0
 	let g:airline_right_alt_sep = ''
 	let g:airline_symbols.branch = ''
 	let g:airline_symbols.readonly = ''
-	let g:airline_symbols.linenr = '☰'
+	"let g:airline_symbols.linenr = '☰'
 	let g:airline_symbols.maxlinenr = ''
 	let g:airline_symbols.dirty= '⚡'
 
