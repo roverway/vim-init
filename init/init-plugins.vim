@@ -293,9 +293,9 @@ if index(g:bundle_group, 'airline') >= 0
 
 	"Powerline symbols
 	let g:airline_powerline_fonts = 1
-	"set guifont=Consolas-with-Yahei:h12:cANSI
-	set guifont=FiraCode_Nerd_Font_Mono:h12:cANSI
+	"分别设置中英文字体，英文字体支持powerline
 	set guifontwide=Microsoft_YaHei:h12
+	set guifont=FiraCode_Nerd_Font_Mono:h12:cANSI
 
 	if !exists('g:airline_symbols')
 		let g:airline_symbols = {}
