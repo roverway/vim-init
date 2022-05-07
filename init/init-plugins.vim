@@ -450,6 +450,7 @@ if index(g:bundle_group, 'leaderf') >= 0
 	" 如果 vim 支持 python 则启用  Leaderf
 	if has('python') || has('python3')
 		Plug 'Yggdroot/LeaderF'
+		
 
 		" CTRL+p 打开文件模糊匹配
 		let g:Lf_ShortcutF = '<c-p>'
@@ -477,6 +478,10 @@ if index(g:bundle_group, 'leaderf') >= 0
 
 		" ui 定制
 		let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
+
+		" 使用弹出窗口，并允许预览
+		let g:Lf_WindowPosition = 'popup'
+		let g:Lf_PreviewInPopup = 1
 
 		" 如何识别项目目录，从当前文件目录向父目录递归知道碰到下面的文件/目录
 		let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']
