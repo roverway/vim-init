@@ -318,12 +318,13 @@ if index(g:bundle_group, 'airline') >= 0
 
 	let g:airline_exclude_preview = 1
 	let g:airline_section_b = '%n'
-	let g:airline_theme='deus'
+	"let g:airline_theme='deus'
+	let g:airline_theme='cool'
 	let g:airline#extensions#branch#enabled = 1
 	let g:airline#extensions#syntastic#enabled = 1
-	let g:airline#extensions#fugitiveline#enabled = 0
-	let g:airline#extensions#csv#enabled = 0
-	let g:airline#extensions#vimagit#enabled = 0
+	let g:airline#extensions#fugitiveline#enabled = 1
+	let g:airline#extensions#csv#enabled = 1
+	let g:airline#extensions#vimagit#enabled = 1
 	"打开tabline功能,方便查看Buffer和切换,省去了minibufexpl插件
 	let g:airline#extensions#tabline#enabled = 1
 	let g:airline#extensions#tabline#buffer_nr_show = 1
@@ -480,7 +481,7 @@ if index(g:bundle_group, 'leaderf') >= 0
 		let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
 
 		" 使用弹出窗口，并允许预览
-		let g:Lf_WindowPosition = 'popup'
+		" let g:Lf_WindowPosition = 'popup'
 		let g:Lf_PreviewInPopup = 1
 
 		" 如何识别项目目录，从当前文件目录向父目录递归知道碰到下面的文件/目录
